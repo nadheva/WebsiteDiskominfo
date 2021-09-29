@@ -31,11 +31,11 @@
     <li><a class="nav-link scrollto" href="/berita">BERITA</a></li>
     <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-        <li><a href="#">Informasi Yang Diumumkan Secara Berkala</a></li>
-        <li><a href="#">Informasi Yang Serta Merta</a></li>
-        <li><a href="#">Informasi Yang Tersedia Setiap Saat</a></li>
-        <li><a href="#">Daftar Informasi Publik</a></li>
-        <li><a href="#">SOP</a></li>
+        <li><a href="/informasi-yang-diumumkan-secara-berkala">Informasi Yang Diumumkan Secara Berkala</a></li>
+        <li><a href="/informasi-yang-serta-merta">Informasi Yang Serta Merta</a></li>
+        <li><a href="/informasi-yang-tersedia-setiap-saat">Informasi Yang Tersedia Setiap Saat</a></li>
+        <li><a href="/daftar-informasi-publik">Daftar Informasi Publik</a></li>
+        <li><a href="/SOP">SOP</a></li>
         </ul>
     </li>
     <li class="dropdown"><a href="#"><span>GALERI</span> <i class="bi bi-chevron-down"></i></a>

@@ -20,27 +20,34 @@ use App\Http\Controllers\BeritaController;
 
 
 Route::get('/kontak', function () {
-    return view('kontak');
+    return view('front.kontak');
 });
 Route::get('/galerifoto', function () {
-    return view('galerifoto');
+    return view('front.galeri.galerifoto');
 });
 Route::get('/galerividio', function () {
-    return view('galerividio');
-});
-Route::get('/struktur-organisasi', function () {
-    return view('struktur_organisasi');
+    return view('front.galeri.galerividio');
 });
 
+
 Route::get('/berita', function () {
-    return view('berita');
+    return view('front.berita.berita');
 });
 Route::get('/', function () {
     return view('welcome');
 })->name('/');
 
+Route::get('/struktur-organisasi', [LandingpageController::class, 'struktur_organisasi'])->name('struktur_organisasi');
 Route::get('/tugas-dan-fungsi', [LandingpageController::class, 'tugas_fungsi'])->name('tugas-dan-fungsi');
 Route::get('/visi-misi', [LandingpageController::class, 'visi_misi'])->name('visi-misi');
+
+// PPID
+Route::get('/informasi-yang-diumumkan-secara-berkala', [LandingpageController::class, 'informasiyangdiumumkansecaraberkala'])->name('informasi-yang-diumumkan-secara-berkala');
+Route::get('/informasi-yang-serta-merta', [LandingpageController::class, 'informasiyangsertamerta'])->name('informasi-yang-serta-merta');
+Route::get('/informasi-yang-tersedia-setiap-saat', [LandingpageController::class, 'informasiyangtersediasetiapsaat'])->name('informasi-yang-tersedia-setiap-saat');
+Route::get('/daftar-informasi-publik', [LandingpageController::class, 'daftarinformasipublik'])->name('daftar-informasi-publik');
+Route::get('/SOP', [LandingpageController::class, 'SOP'])->name('SOP');
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {

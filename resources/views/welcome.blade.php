@@ -3,7 +3,7 @@
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
         <h1>DINAS KOMUNIKASI DAN INFORMATIKA</h1>
         <h2>Kabupaten Gresik</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        {{-- <a href="#about" class="btn-get-started scrollto">Get Started</a> --}}
     </div>
 </section>
 @endsection
