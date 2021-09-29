@@ -112,9 +112,9 @@
                                 <thead class="thead-primary text-center">
                                     <tr>
                                         <th>No.</th>
-                                        <th>Nama</th>
-                                        <th>Alamat</th>
-                                        <th>Pekerjaan</th>
+                                        <th>Judul</th>
+                                        <th>Link</th>
+                                        <th>Jenis</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
