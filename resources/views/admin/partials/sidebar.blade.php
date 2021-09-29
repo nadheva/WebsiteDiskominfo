@@ -8,24 +8,13 @@
 
                 <li class="list-divider"></li>
                 <li class="nav-small-cap"><span class="hide-menu">Components</span></li>
-                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
-                        <i data-feather="file-text" class="feather-icon"></i><span class="hide-menu">Profil </span></a>
-                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                        <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Struktur Organisasi
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Visi dan Misi
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Tugas dan Fungsi
-                                </span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ui-cards.html" aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span class="hide-menu"> Berita
+                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{route("Profil.index")}}" aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span class="hide-menu"> Profil
+                </span></a>
+        </li>
+                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{route("Berita.index")}}" aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span class="hide-menu"> Berita
                         </span></a>
                 </li>
-                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{route("ppid.index")}}" aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span class="hide-menu"> PPID
+                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{route("PPID.index")}}" aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span class="hide-menu"> PPID
                         </span></a>
                 </li>
                 <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
