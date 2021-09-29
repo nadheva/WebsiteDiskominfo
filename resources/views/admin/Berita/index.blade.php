@@ -17,40 +17,41 @@
                     <div class="modal-body">
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="card">
-                                <form action="{{route('Perpustakaan.store')}}" method="post">
+                                <form action="{{route('Berita.store')}}" method="post">
                                     @csrf
                                 <div class="card-body">
-                                    <h4 class="card-title">Kategori</h4>
-                                    <div class="form-group">
-                                        <select class="custom-select mr-sm-2" name="kategori" id="inlineFormCustomSelect">
-                                            <option value="GEOTEK">GEOTEK</option>
-                                            <option value="Komik">Komik</option>
-                                        </select>
-                                    </div>
+
+
 
                                     <h4 class="card-title">Judul</h4>
                                     <div class="form-group">
                                         <input name="judul" type="text" class="form-control">
                                     </div>
 
-                                    <h4 class="card-title">Penulis</h4>
+                                    <h4 class="card-title">Isi</h4>
                                     <div class="form-group">
-                                        <input name="penulis" type="text" class="form-control">
+                                        <input name="isi" type="text" class="form-control">
                                     </div>
 
-                                    <h4 class="card-title">Penerbit</h4>
+                                    <h4 class="card-title">Link</h4>
                                     <div class="form-group">
-                                        <input name="penerbit" type="text" class="form-control">
+                                        <input name="link" type="text" class="form-control">
                                     </div>
 
-                                    <h4 class="card-title">Nomer HP</h4>
+                                    <h4 class="card-title">Foto</h4>
                                     <div class="form-group">
-                                        <input name="no_panggil" type="number" class="form-control">
+                                        <input name="foto" type="text" class="form-control">
                                     </div>
 
-                                    <h4 class="card-title">Ringkasan</h4>
+                                    <h4 class="card-title">Jenis Berita</h4>
                                     <div class="form-group">
-                                        <input name="ringkasan" type="text" class="form-control">
+                                        <select class="custom-select mr-sm-2" name="jenis_berita" id="inlineFormCustomSelect">
+                                            <option value="Sekretariat">Sekretariat</option>
+                                            <option value="Komunikasi dan Persandian">Komunikasi dan Persandian</option>
+                                            <option value="Pengembangan E-Gov">Pengembangan E-Gov</option>
+                                            <option value="Pelayanan Informasi dan Statistik">Pelayanan Informasi dan Statistik</option>
+                                            <option value="UPT LSPE">UPT LSPE</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -74,7 +75,7 @@
                     @csrf
                     @method("PUT")
                     <div class="modal-header">
-                        <h5 class="modal-title" id="scrollableModalTitle">Ubah Data Alumni</h5>
+                        <h5 class="modal-title" id="scrollableModalTitle">Ubah Data Berita</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -82,42 +83,43 @@
                     <div class="modal-body">
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="card">
-                                <form action="{{route('Perpustakaan.store')}}" method="post">
+                                <form action="{{route('Berita.store')}}" method="post">
                                     @csrf
-                                <div class="card-body">
-                                    <h4 class="card-title">Kategori</h4>
-                                    <div class="form-group">
-                                        <select class="custom-select mr-sm-2" id="inp-kategori" name="kategori" id="inlineFormCustomSelect">
-                                            <option value="GEOTEK">GEOTEK</option>
-                                            <option value="Komik">Komik</option>
-                                        </select>
-                                    </div>
+                                    <div class="card-body">
 
-                                    <h4 class="card-title">Judul</h4>
-                                    <div class="form-group">
-                                        <input name="judul" id="inp-judul" type="text" class="form-control">
-                                    </div>
 
-                                    <h4 class="card-title">Penulis</h4>
-                                    <div class="form-group">
-                                        <input name="penulis" id="inp-penulis" type="text" class="form-control">
-                                    </div>
 
-                                    <h4 class="card-title">Penerbit</h4>
-                                    <div class="form-group">
-                                        <input name="penerbit" id="inp-penerbit" type="text" class="form-control">
-                                    </div>
+                                        <h4 class="card-title">Judul</h4>
+                                        <div class="form-group">
+                                            <input name="judul" type="text" class="form-control">
+                                        </div>
 
-                                    <h4 class="card-title">Nomer HP</h4>
-                                    <div class="form-group">
-                                        <input name="no_panggil" id="inp-no_panggil" type="number" class="form-control">
-                                    </div>
+                                        <h4 class="card-title">Isi</h4>
+                                        <div class="form-group">
+                                            <input name="isi" type="text" class="form-control">
+                                        </div>
 
-                                    <h4 class="card-title">Ringkasan</h4>
-                                    <div class="form-group">
-                                        <input name="ringkasan" id="inp-ringkasan" type="text" class="form-control">
+                                        <h4 class="card-title">Link</h4>
+                                        <div class="form-group">
+                                            <input name="link" type="text" class="form-control">
+                                        </div>
+
+                                        <h4 class="card-title">Foto</h4>
+                                        <div class="form-group">
+                                            <input name="foto" type="text" class="form-control">
+                                        </div>
+
+                                        <h4 class="card-title">Jenis Berita</h4>
+                                        <div class="form-group">
+                                            <select class="custom-select mr-sm-2" name="jenis_berita" id="inlineFormCustomSelect">
+                                                <option value="Sekretariat">Sekretariat</option>
+                                                <option value="Komunikasi dan Persandian">Komunikasi dan Persandian</option>
+                                                <option value="Pengembangan E-Gov">Pengembangan E-Gov</option>
+                                                <option value="Pelayanan Informasi dan Statistik">Pelayanan Informasi dan Statistik</option>
+                                                <option value="UPT LSPE">UPT LSPE</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
 
                             </div>
                         </div>
@@ -140,39 +142,39 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Data Perpustakaan</h4>
+                        <h4 class="card-title">Data Berita</h4>
                         <div class="table-responsive">
                             <table id="myTable" class="table table-sm-td table-hover table-striped table-bordered no-wrap">
                                 <thead class="thead-primary text-center">
                                     <tr>
                                         <th>No.</th>
-                                        <th>Kategori</th>
                                         <th>Judul</th>
-                                        <th>Penulis</th>
-                                        <th>Nomer HP</th>
-                                        <th>Ringkasan</th>
+                                        <th>Isi</th>
+                                        <th>Link</th>
+                                        <th>Foto</th>
+                                        <th>Jenis Berita</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($Perpustakaan as $item)
+                                    @foreach ($Berita as $item)
                                     <tr>
                                         <td style="text-align: center;">{{ $loop->iteration}}</td>
-                                        <td>{{$item->kategori}}</td>
                                         <td>{{$item->judul}}</td>
-                                        <td>{{$item->penulis}}</td>
-                                        <td>{{$item->no_panggil}}</td>
-                                        <td>{{$item->ringkasan}}</td>
+                                        <td>{{$item->isi}}</td>
+                                        <td>{{$item->link}}</td>
+                                        <td>{{$item->foto}}</td>
+                                        <td>{{$item->jenis_berita}}</td>
                                         <td style="text-align: center;">
                                             <button type="button"
                                             data-toggle="modal"
                                             style="border-radius: 15px"
-                                            class="btn waves-effect waves-light btn-outline-primary pt-1 pb-1 editPerpustakaanButton"
+                                            class="btn waves-effect waves-light btn-outline-primary pt-1 pb-1 editBeritaButton"
                                             data-target="#scrollable-modal-edit"
                                             value="{{$item->id}}">
                                             <i class="fas fa-edit"></i> Edit
                                             </button>
-                                            <form class="btn p-0" method="post" action="{{route('Perpustakaan.destroy',$item->id)}}">
+                                            <form class="btn p-0" method="post" action="{{route('Berita.destroy',$item->id)}}">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" style="border-radius: 15px;" class="btn waves-effect waves-light btn-outline-secondary pt-1 pb-1">
@@ -204,21 +206,21 @@
             $('#myTable').DataTable();
         });
 
-        $(document).on("click", ".editPerpustakaanButton", function()
+        $(document).on("click", ".editBeritaButton", function()
         {
             let id = $(this).val();
             $.ajax({
                 method: "get",
-                url :  "Perpustakaan/"+id+"/edit",
+                url :  "Berita/"+id+"/edit",
             }).done(function(response)
             {
-                $("#inp-kategori").val(response.kategori);
+
                 $("#inp-judul").val(response.judul);
-                $("#inp-penulis").val(response.penulis);
-                $("#inp-penerbit").val(response.penerbit);
-                $("#inp-no_panggil").val(response.no_panggil);
-                $("#inp-ringkasan").val(response.ringkasan);
-                $("#editModalForm").attr("action", "/Perpustakaan/" + id)
+                $("#inp-isi").val(response.isi);
+                $("#inp-link").val(response.link);
+                $("#inp-foto").val(response.foto);
+                $("#inp-jenis_berita").val(response.jenis_berita);
+                $("#editModalForm").attr("action", "/Berita/" + id)
             });
         });
     </script>

@@ -30,12 +30,11 @@
                                     <h4 class="card-title">Jenis</h4>
                                     <select class="custom-select mr-sm-2" name="jenis" id="inlineFormCustomSelect">
                                         <option selected="">Choose...</option>
-                                        <option value="Genap">Daftar Informasi Public</option>
-                                        <option value="Ganjil">Informasi Yang Diumumkan Secara Berkala</option>
-                                        <option value="Genap">Genap</option>
-                                        <option value="Ganjil">Ganjil</option>
-                                        <option value="Genap">Genap</option>
-                                        <option value="Ganjil">Ganjil</option>
+                                        <option value="Daftar Informasi Publik">Daftar Informasi Publik</option>
+                                        <option value="Informasi Yang Diumumkan Secara Berkala">Informasi Yang Diumumkan Secara Berkala</option>
+                                        <option value="Informasi Yang Serta Merta">Informasi Yang Serta Merta</option>
+                                        <option value="Informasi Yang Tersedia Setiap Saat">Informasi Yang Tersedia Setiap Saat</option>
+                                        <option value="SOP">SOP</option>
                                     </select>
                                 </div>
                             </div>
@@ -67,20 +66,23 @@
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Nama</h4>
+                                    <h4 class="card-title">Judul</h4>
                                     <div class="form-group">
-                                        <input name="nama" id="inp-nama" type="text" class="form-control">
+                                        <input name="judul" type="text" id="inp-judul" class="form-control" placeholder="Masukkan Judul PPID">
                                     </div>
-
-                                    <h4 class="card-title">Alamat</h4>
+                                    <h4 class="card-title">Link</h4>
                                     <div class="form-group">
-                                        <input name="alamat" id="inp-alamat" type="text" class="form-control">
+                                        <input name="link" type="text" id="inp-link" class="form-control" placeholder="Masukkan Link Download Berkas">
                                     </div>
-
-                                    <h4 class="card-title">Pekerjaan</h4>
-                                    <div class="form-group">
-                                        <input name="pekerjaan" id="inp-pekerjaan" type="text" class="form-control">
-                                    </div>
+                                    <h4 class="card-title">Jenis</h4>
+                                    <select class="custom-select mr-sm-2" id="inp-jenis" name="jenis" id="inlineFormCustomSelect">
+                                        <option selected="">Choose...</option>
+                                        <option value="Daftar Informasi Publik">Daftar Informasi Publik</option>
+                                        <option value="Informasi Yang Diumumkan Secara Berkala">Informasi Yang Diumumkan Secara Berkala</option>
+                                        <option value="Informasi Yang Serta Merta">Informasi Yang Serta Merta</option>
+                                        <option value="Informasi Yang Tersedia Setiap Saat">Informasi Yang Tersedia Setiap Saat</option>
+                                        <option value="SOP">SOP</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -120,9 +122,9 @@
                                     @foreach ($PPID as $item)
                                     <tr>
                                         <td style="text-align: center;">{{ $loop->iteration}}</td>
-                                        <td>{{$item->nama}}</td>
-                                        <td>{{$item->alamat}}</td>
-                                        <td>{{$item->pekerjaan}}</td>
+                                        <td>{{$item->judul}}</td>
+                                        <td>{{$item->link}}</td>
+                                        <td>{{$item->jenis}}</td>
                                         <td style="text-align: center;">
                                         <button type="button"
                                             data-toggle="modal"
@@ -164,9 +166,9 @@
                     url :  "PPID/"+id+"/edit",
                 }).done(function(response)
                 {
-                    $("#inp-nama").val(response.nama);
-                    $("#inp-alamat").val(response.alamat);
-                    $("#inp-pekerjaan").val(response.pekerjaan);
+                    $("#inp-judul").val(response.judul);
+                    $("#inp-link").val(response.link);
+                    $("#inp-jenis").val(response.jenis);
                     $("#editModalForm").attr("action", "/PPID/" + id)
                 });
             });

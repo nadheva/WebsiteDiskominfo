@@ -42,7 +42,7 @@ Route::get('/berita', function () {
 });
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
 
 // Route::get('/', [LandingpageController::class, 'landingPage'])->name('/');
