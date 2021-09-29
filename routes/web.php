@@ -31,12 +31,7 @@ Route::get('/galerividio', function () {
 Route::get('/struktur-organisasi', function () {
     return view('struktur_organisasi');
 });
-Route::get('/visi-misi', function () {
-    return view('visimisi');
-});
-Route::get('/tugas-dan-fungsi', function () {
-    return view('tugasfungsi');
-});
+
 Route::get('/berita', function () {
     return view('berita');
 });
@@ -44,8 +39,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('/');
 
-
-// Route::get('/', [LandingpageController::class, 'landingPage'])->name('/');
+Route::get('/tugas-dan-fungsi', [LandingpageController::class, 'tugas_fungsi'])->name('tugas-dan-fungsi');
+Route::get('/visi-misi', [LandingpageController::class, 'visi_misi'])->name('visi-misi');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {

@@ -12,14 +12,14 @@
                             <div class="info">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Visi:</h4>
-                                <p>kominfo@gresikkab.go.id</p>
+                                <p>{{$Profil->visi}}</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="info w-100 mt-4">
                                 <i class="bi bi-phone"></i>
                                 <h4>Misi:</h4>
-                                <p>(031) 3975454</p>
+                                <p>{{$Profil->misi}}</p>
                             </div>
                         </div>
                     </div>
