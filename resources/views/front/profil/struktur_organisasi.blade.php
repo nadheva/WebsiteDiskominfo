@@ -10,8 +10,8 @@
                     <div class="row">
                         <div class="col-lg-12 mt-4 ">
                             <div class="info text-center">
-                                <h4>Struktur Organisasi</h4>
-                                <p>kominfo@gresikkab.go.id</p>
+                                {{-- <h4>Struktur Organisasi</h4> --}}
+                                <img src="{{asset('assets/img/struktur.jpg')}}" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>

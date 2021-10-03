@@ -13,23 +13,23 @@
                     <strong>Email:</strong> info@example.com<br>
                 </p> --}}
             </div>
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            {{-- <div class="col-lg-4 col-md-6 footer-newsletter">
                 <h4>Alamat : </h4>
                 <p>Jl. Kuaro, Gn. Kelua, Kec. Samarinda Ulu, Kabupaten Paser, Kalimantan Timur 75119</p>
-                {{-- <form action="" method="post">
+                <form action="" method="post">
                     <input type="email" name="email"><input type="submit" value="Subscribe">
-                </form> --}}
-            </div>
+                </form>
+            </div> --}}
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            {{-- <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Kontak</h4>
                 <ul>
                   <p>FB : DISKOMINFO unmul<br>
                     Email :DISKOMINFO.unmul.smd@gmail.com
                   </p>
                 </ul>
-            </div>
-
+            </div> --}}
+{{--
             <div class="col-lg-2 col-md-6 footer-links">
                 <h4>Temukan Kami</h4>
                 <ul>
@@ -41,7 +41,7 @@
                         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
 
 
 
@@ -53,7 +53,7 @@
 
         <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-            &copy; Copyright <strong><span>Bethany</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>diskominfo</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -64,11 +64,11 @@
         </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/kominfo_gresik" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/PdtiGresik" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/kominfogresik/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
         </div>
     </div>
 </footer>

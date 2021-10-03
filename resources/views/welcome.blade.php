@@ -126,23 +126,23 @@
             <div class="row counters">
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>Clients</p>
+                    <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Pengunjung Hari Ini</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
                     <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>Projects</p>
+                    <p>Pengunjung Minggu Ini</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
                     <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>Hours Of Support</p>
+                    <p>Pengunjung Tahun Ini</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>Hard Workers</p>
+                    <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Total Pengunjung</p>
                 </div>
 
             </div>
@@ -166,7 +166,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    {{-- <section id="services" class="services section-bg">
         <div class="container">
 
             <div class="row">
@@ -215,7 +215,7 @@
             </div>
 
         </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Services Section --> --}}
 
     <!-- ======= Testimonials Section ======= -->
 
@@ -225,20 +225,20 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-4">
+                {{-- <div class="col-lg-4">
                     <div class="section-title" data-aos="fade-right">
                         <h2>Team</h2>
                         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
                     </div>
-                </div>
-                <div class="col-lg-8">
+                </div> --}}
+                <div class="col-lg-12">
                     <div class="row">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                                <div class="pic"><img src="Bethany/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/whatsapp_image_2021-06-22_at_16.25.32.jpeg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>Walter White</h4>
+                                    <h4>Berita 1</h4>
                                     <span>Chief Executive Officer</span>
                                     <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                                     <div class="social">
@@ -251,11 +251,11 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="col-lg-4 ">
                             <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="pic"><img src="Bethany/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/whatsapp_image_2021-06-22_at_16.59.54.jpeg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
+                                    <h4>Berita 2</h4>
                                     <span>Product Manager</span>
                                     <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                                     <div class="social">
@@ -268,11 +268,11 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mt-4">
+                        <div class="col-lg-4 ">
                             <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                                <div class="pic"><img src="Bethany/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/tanah_laut.jpg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>William Anderson</h4>
+                                    <h4>Berita 3</h4>
                                     <span>CTO</span>
                                     <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                                     <div class="social">
@@ -285,13 +285,47 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 mt-4">
+                        <div class="col-lg-4">
                             <div class="member" data-aos="zoom-in" data-aos-delay="400">
-                                <div class="pic"><img src="Bethany/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/1_10.jpg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>Amanda Jepson</h4>
+                                    <h4>Berita 4</h4>
                                     <span>Accountant</span>
                                     <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                    <div class="social">
+                                        <a href=""><i class="ri-twitter-fill"></i></a>
+                                        <a href=""><i class="ri-facebook-fill"></i></a>
+                                        <a href=""><i class="ri-instagram-fill"></i></a>
+                                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 ">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/whatsapp_image_2021-06-22_at_16.59.54.jpeg" class="img-fluid" alt=""></div>
+                                <div class="member-info">
+                                    <h4>Berita 5</h4>
+                                    <span>Product Manager</span>
+                                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                    <div class="social">
+                                        <a href=""><i class="ri-twitter-fill"></i></a>
+                                        <a href=""><i class="ri-facebook-fill"></i></a>
+                                        <a href=""><i class="ri-instagram-fill"></i></a>
+                                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 ">
+                            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="pic"><img src="https://diskominfo.gresikkab.go.id/po-content/thumbs/tanah_laut.jpg" class="img-fluid" alt=""></div>
+                                <div class="member-info">
+                                    <h4>Berita 6</h4>
+                                    <span>CTO</span>
+                                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                                     <div class="social">
                                         <a href=""><i class="ri-twitter-fill"></i></a>
                                         <a href=""><i class="ri-facebook-fill"></i></a>

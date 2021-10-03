@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Teknik4.jpg") center center;
+  background: url("https://diskominfo.gresikkab.go.id/po-content/themes/kominfo/img/bg/haribhayangkara.jpg") center center;
   background-size: cover;
   position: relative;
 }
@@ -654,7 +654,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdn.suaranetwork.com/images/2021/03/16/1d861e94d4a5.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
